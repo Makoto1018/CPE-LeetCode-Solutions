@@ -3,7 +3,7 @@
 using namespace std;
 int main(){
     int n=0, counter=0;
-    cin>>n;
+    cin >> n;
     vector<int> fib;
     fib.push_back(1); // 第1
     fib.push_back(2); // 第2

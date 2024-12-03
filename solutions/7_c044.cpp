@@ -14,7 +14,6 @@ int main(){
     cin.ignore();
     for(int i=0;i<n;i++){
         getline(cin,s);
-        //cout<<s<<endl;
         for(int j=0;j<s.length();j++){
             if(isalpha(s[j])){
                 if(isupper(s[j])){

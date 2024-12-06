@@ -4,7 +4,7 @@
 #include <algorithm>
 using namespace std;
 
-// 到所有點距離最短 --> 取中位數
+// *到所有點距離最短 --> 取中位數
 int main(){
     int n=0;
     cin >> n;

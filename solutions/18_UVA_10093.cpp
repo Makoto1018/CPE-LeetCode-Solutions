@@ -6,19 +6,35 @@
 using namespace std;
 
 int main(){
-    char c;
-    while(cin>>c){
+    string s;
+    while(getline(cin,s)){
         //cout<<c<<endl;
-        if(isalnum(c)){
-            if(isdigit(c))
-                cout << c - '0' + 1 << endl;
-            else if(isupper(c))
-                cout << c - 'A' + 11 << endl;
-            else if(islower(c))
-                cout << c - 'a' + 37 << endl;
+        int max=1;
+        int total=0;
+        for(int i=0;i<s.size();i++){
+            if(isalnum(s[i])){
+                int tmp=0;
+                if(isdigit(s[i]))
+                    tmp = s[i] - '0';
+                else if(isupper(s[i]))
+                    tmp = s[i] - 'A' + 10;
+                else if(islower(s[i]))
+                    tmp = s[i] - 'a' + 36;
+                if(tmp>max)
+                    max = tmp;
+                total = total + tmp;
+            }
         }
-        else
-            cout <<  "such number is impossible!" << endl;
+        bool printed=false;
+        for(int i=max;i<62;i++){
+            if(total%i==0){
+                cout << i+1 <<endl;
+                printed = true;
+                break;
+            }
+        }
+        if(!printed)
+            cout << "such number is impossible!" << endl;
     }
     return 0;
 }

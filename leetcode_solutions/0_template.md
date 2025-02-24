@@ -25,3 +25,18 @@
 
 - **學到的新觀念**  
 - **遇到的困難點與解法**  
+
+---
+
+### code
+```cpp
+class Solution {
+public:
+
+    int exampleFunction(vector<int>& nums) {
+
+        return 0;
+    }
+};
+
+```

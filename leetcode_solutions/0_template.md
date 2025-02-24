@@ -6,13 +6,13 @@
 
 ---
 
-### 📚 Problem Description
+### Problem Description
 
 > 複製題目內容或簡要說明題目重點。
 
 ---
 
-### 💡 Approach
+### Approach
 
 1. **思路概述**：簡單描述解題思路。  
 2. **關鍵步驟**：列出主要邏輯與步驟。  
@@ -21,7 +21,7 @@
 
 ---
 
-### 🔥 Summary
+### Summary
 
 - **學到的新觀念**  
 - **遇到的困難點與解法**  
